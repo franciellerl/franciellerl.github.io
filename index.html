@@ -1,161 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 2rem;
-      text-align: center;
-      background: #111827;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-
-    header p {
-      color: #94a3b8;
-    }
-
-    nav {
-      margin-top: 1rem;
-    }
-
-    nav a {
-      color: #38bdf8;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
-
-    h2 {
-      margin-bottom: 1rem;
-      color: #38bdf8;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1rem;
-    }
-
-    .card {
-      background: #1e293b;
-      padding: 1.5rem;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #111827;
-      color: #94a3b8;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 10px 20px;
-      background: #38bdf8;
-      color: #0f172a;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Data Analyst • Python Developer • BI Enthusiast</p>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo">&#123; DEV &#125;</span>
+    <div class="nav-links">
+      <a href="#about">Sobre</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </div>
+    <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+  </nav>
 
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi! I'm a developer passionate about data, automation, dashboards,
-      and building useful tools with Python, SQL, and BI platforms.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects">
-
-      <div class="card">
-        <h3>Banking ETL Pipeline</h3>
-        <p>
-          Automated web scraping and ETL process using Python and PostgreSQL.
-        </p>
-        <a href="#" class="btn">View Project</a>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Data Engineer & Analytics</p>
+      <h1 class="hero-title">
+        Transformando<br>
+        <em>dados brutos</em><br>
+        em decisões.
+      </h1>
+      <p class="hero-sub">
+        ETL · Pipelines · Dashboards · Geoespacial
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contact" class="btn btn-ghost">Contato</a>
       </div>
-
-      <div class="card">
-        <h3>Qlik Dashboard</h3>
-        <p>
-          Interactive analytics dashboard with KPIs and dynamic filters.
-        </p>
-        <a href="#" class="btn">View Project</a>
+    </div>
+    <div class="hero-visual">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <div class="terminal-body">
+          <div class="line"><span class="prompt">$</span> <span class="cmd typing">python pipeline.py</span></div>
+          <div class="line out">✔ Conectando ao banco...</div>
+          <div class="line out">✔ Extraindo 2.4M registros...</div>
+          <div class="line out">✔ Transformando dados...</div>
+          <div class="line out success">✔ Pipeline concluído! (4.2s)</div>
+          <div class="line"><span class="prompt">$</span> <span class="cursor">▋</span></div>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>GeoData Automation</h3>
-        <p>
-          GIS automation scripts using QGIS and GeoPandas.
-        </p>
-        <a href="#" class="btn">View Project</a>
-      </div>
-
     </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-
-    <p>Email: your@email.com</p>
-    <p>GitHub: github.com/youruser</p>
-    <p>LinkedIn: linkedin.com/in/youruser</p>
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <h2 class="section-title">Sobre mim</h2>
+      <p class="about-text">
+        Engenheiro de dados apaixonado por construir pipelines robustos, 
+        dashboards que revelam insights e sistemas que escalam. 
+        Experiência com Python, SQL, Qlik, dados geoespaciais e automação de ETL.
+      </p>
+      <div class="skills-grid">
+        <div class="skill-chip">Python</div>
+        <div class="skill-chip">SQL</div>
+        <div class="skill-chip">ETL</div>
+        <div class="skill-chip">Qlik Sense</div>
+        <div class="skill-chip">GeoPandas</div>
+        <div class="skill-chip">PostgreSQL</div>
+        <div class="skill-chip">Pandas</div>
+        <div class="skill-chip">Git</div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2026 Your Name. All rights reserved.</p>
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <h2 class="section-title">Projetos</h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <div class="card-tag">ETL · Python · SQL</div>
+          <h3 class="card-title">Banking ETL Pipeline</h3>
+          <p class="card-desc">
+            Pipeline automatizado para extração, transformação e carga 
+            de dados bancários. Processamento de 2M+ registros diários.
+          </p>
+          <div class="card-footer">
+            <a href="projects/banking-etl.html" class="btn btn-card">Ver Projeto →</a>
+          </div>
+        </article>
+
+        <article class="card card--accent">
+          <div class="card-tag">Qlik · BI · Analytics</div>
+          <h3 class="card-title">Qlik Dashboard</h3>
+          <p class="card-desc">
+            Dashboard executivo com KPIs em tempo real, análise de cohort 
+            e visualizações interativas para tomada de decisão.
+          </p>
+          <div class="card-footer">
+            <a href="projects/qlik-dashboard.html" class="btn btn-card">Ver Projeto →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-tag">GeoPandas · Mapas · Python</div>
+          <h3 class="card-title">Geodata Analysis</h3>
+          <p class="card-desc">
+            Análise geoespacial de dados urbanos com visualizações 
+            em mapa, clustering e análise de cobertura por região.
+          </p>
+          <div class="card-footer">
+            <a href="projects/geodata.html" class="btn btn-card">Ver Projeto →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-inner contact-inner">
+      <h2 class="section-title">Contato</h2>
+      <p class="contact-sub">Aberto a oportunidades e colaborações.</p>
+      <div class="contact-links">
+        <a href="https://github.com/" target="_blank" class="contact-link">
+          <span class="contact-icon">⌥</span> GitHub
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-link">
+          <span class="contact-icon">↗</span> LinkedIn
+        </a>
+        <a href="mailto:seuemail@email.com" class="contact-link">
+          <span class="contact-icon">✉</span> Email
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>Feito com HTML · CSS · JS — hospedado no GitHub Pages</span>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>
