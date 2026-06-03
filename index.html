@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background: #111827;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: #94a3b8;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #38bdf8;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #38bdf8;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #111827;
+      color: #94a3b8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Data Analyst • Python Developer • BI Enthusiast</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm a developer passionate about data, automation, dashboards,
+      and building useful tools with Python, SQL, and BI platforms.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects">
+
+      <div class="card">
+        <h3>Banking ETL Pipeline</h3>
+        <p>
+          Automated web scraping and ETL process using Python and PostgreSQL.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>Qlik Dashboard</h3>
+        <p>
+          Interactive analytics dashboard with KPIs and dynamic filters.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="card">
+        <h3>GeoData Automation</h3>
+        <p>
+          GIS automation scripts using QGIS and GeoPandas.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: your@email.com</p>
+    <p>GitHub: github.com/youruser</p>
+    <p>LinkedIn: linkedin.com/in/youruser</p>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
