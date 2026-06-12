@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>:Portfolio - Plantas do Brasil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='65%25' font-size='70' font-family='sans-serif' font-weight='bold' text-anchor='middle'%3E:)%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo">//:</span>
+    <div class="nav-center">
+      <a href="../index.html">
+        <span data-lang="pt">&larr; Início</span>
+        <span data-lang="en">&larr; Home</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">&#9680;</button>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <a href="all-projects.html" class="btn-back">
+      <span data-lang="pt">&larr; todos os projetos</span>
+      <span data-lang="en">&larr; all projects</span>
+    </a>
+
+    <!-- HEADER -->
+    <p class="project-eyebrow">
+      <span data-lang="pt">Engenharia de Dados &middot; Data Science &middot; Geoespacial</span>
+      <span data-lang="en">Data Engineering &middot; Data Science &middot; Geospatial</span>
+    </p>
+
+    <h1 class="project-title">PLANTAS<br>DO BRASIL</h1>
+
+    <div class="project-meta">
+      <span class="meta-tag">Python</span>
+      <span class="meta-tag">GBIF API</span>
+      <span class="meta-tag">Pandas</span>
+      <span class="meta-tag">Parquet</span>
+      <span class="meta-tag">Matplotlib</span>
+      <span class="meta-tag">K-Means</span>
+      <span class="meta-tag">Folium</span>
+      <span class="meta-tag">Jupyter</span>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- VISAO GERAL -->
+    <div class="flower-accent">
+      <svg width="60" height="70" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(30,28)">
+          <ellipse cx="0" cy="-16" rx="7" ry="11" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="0" cy="16" rx="7" ry="11" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="-16" cy="0" rx="11" ry="7" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="16" cy="0" rx="11" ry="7" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="-11" cy="-11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(-45 -11 -11)"/>
+          <ellipse cx="11" cy="-11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(45 11 -11)"/>
+          <ellipse cx="-11" cy="11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(45 -11 11)"/>
+          <ellipse cx="11" cy="11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(-45 11 11)"/>
+          <circle cx="0" cy="0" r="8" fill="var(--accent3)"/>
+        </g>
+        <line x1="30" y1="44" x2="30" y2="68" stroke="var(--border)" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <h2 class="project-section-title">
+      <span data-lang="pt">// visão_geral</span>
+      <span data-lang="en">// overview</span>
+    </h2>
+
+    <p class="project-text" data-lang="pt">
+      Pipeline completo de engenharia de dados aplicado a dados de biodiversidade
+      floral brasileira.
+      A fonte é o <a href="https://www.gbif.org/" target="_blank">GBIF</a>
+      (Global Biodiversity Information Facility), banco de dados global e gratuito
+      com mais de 2 bilhões de registros de ocorrencia de espécies.
+      O projeto cobre todo o ciclo: coleta via API, limpeza, análise exploratória,
+      clustering geoespacial e mapa interativo como entrega final.
+    </p>
+    <p class="project-text" data-lang="en">
+      End-to-end data engineering pipeline applied to Brazilian floral biodiversity data.
+      The data source is <a href="https://www.gbif.org/" target="_blank">GBIF</a>
+      (Global Biodiversity Information Facility), a free global database with
+      over 2 billion species occurrence records.
+      The project covers the full cycle: API collection, cleaning, exploratory analysis,
+      geospatial clustering, and an interactive map as the final deliverable.
+    </p>
+
+    <div class="project-highlight">
+      <span data-lang="pt">
+        <span>&#x2192; 9.000 registros coletados via API REST paginada</span><br>
+        <span>&#x2192; Pipeline ETL com limpeza e validação</span><br>
+        <span>&#x2192; Clustering K-Means com K ideal</span><br>
+        <span>&#x2192; Mapa interativo com heatmap, marcadores e toggle por cluster</span>
+      </span>
+      <span data-lang="en">
+        <span>&#x2192; 9,000 records collected via paginated REST API</span><br>
+        <span>&#x2192; ETL pipeline with cleaning and validation</span><br>
+        <span>&#x2192; K-Means clustering with optimal K</span><br>
+        <span>&#x2192; Interactive map with heatmap, markers and per-cluster toggle</span>
+      </span>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- PIPELINE -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// estrutura_do_pipeline</span>
+      <span data-lang="en">// pipeline_structure</span>
+    </h2>
+
+    <div class="pipeline-steps">
+
+      <div class="pipeline-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <div class="step-title">pipeline.ipynb &mdash;
+            <span data-lang="pt">Coleta e Limpeza</span>
+            <span data-lang="en">Collection and Cleaning</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Requisições paginadas à API REST do GBIF (300 registros/página) com
+            tratamento de erros e pausa entre chamadas. Seleção de colunas,
+            remoção de nulos, validação de coordenadas pelo bounding box e pela malha geográfica do Brasil,
+            normalização de texto e deduplicação por <code>gbifID</code>.
+            Saída em <code>.parquet</code> e <code>.csv</code>.
+          </p>
+          <p class="step-desc" data-lang="en">
+            Paginated requests to GBIF REST API (300 records/page) with error handling
+            and rate-limiting pauses. Column selection, null removal, coordinate validation
+            against Brazil's bounding box and national boundary geometry, text normalization and deduplication by
+            <code>gbifID</code>. Output in <code>.parquet</code> (~5x smaller than CSV)
+            and <code>.csv</code>.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <div class="step-title">analise.ipynb &mdash;
+            <span data-lang="pt">EDA + Clustering K-Means</span>
+            <span data-lang="en">EDA + K-Means Clustering</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Análise exploratória por meio de três gráficos: Top 10 espécies, Top 10 estados 
+            e distribuição das fontes. Clustering K-Means sobre latitude
+            e longitude normalizadas; K ideal escolhido pelo equilíbrio entre os testes (testado de K=2 a K=8).
+          </p>
+          <p class="step-desc" data-lang="en">
+            Exploratory analysis across three charts:Top 10 species, Top 10 states, 
+            and source distribution. K-Means clustering on normalized latitude
+            and longitude; optimal K was determined by balancing metrics,
+            (tested from K=2 to K=8). 
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <div class="step-title">geovisualizacao.ipynb &mdash;
+            <span data-lang="pt">Visualização com Folium</span>
+            <span data-lang="en">Visualization with Folium</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Mapa construído com Folium (wrapper Python para Leaflet.js). Camadas incluem
+            heatmap de densidade com todos os registros, 2.000 marcadores interativos
+            com popup por espécie, e uma camada separada por cluster com toggle
+            individual. Saída como <code>mapa_plantas_brasil.html</code> 
+          </p>
+          <p class="step-desc" data-lang="en">
+            Map built with Folium (Python wrapper for Leaflet.js). Layers include
+            density heatmap with all records, 2,000 interactive markers with
+            per-species popup, and a separate layer per cluster with individual toggle.
+            Output as <code>mapa_plantas_brasil.html</code> 
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- STACK -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// stack</span>
+      <span data-lang="en">// stack</span>
+    </h2>
+
+    <table class="stack-table">
+      <thead>
+        <tr>
+          <th><span data-lang="pt">Camada</span><span data-lang="en">Layer</span></th>
+          <th><span data-lang="pt">Tecnologia</span><span data-lang="en">Technology</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span data-lang="pt">Coleta</span><span data-lang="en">Collection</span></td>
+          <td><code>requests</code> + API REST GBIF</td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Armazenamento</span><span data-lang="en">Storage</span></td>
+          <td><code>pandas</code> + <code>.parquet</code> via <code>pyarrow</code></td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Análise</span><span data-lang="en">Analysis</span></td>
+          <td><code>pandas</code>, <code>matplotlib</code>, <code>seaborn</code></td>
+        </tr>
+        <tr>
+          <td>Machine Learning</td>
+          <td><code>scikit-learn</code> - KMeans, StandardScaler, silhouette_score</td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Visualização</span><span data-lang="en">Visualization</span></td>
+          <td><code>folium</code>, <code>folium.plugins</code></td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Ambiente</span><span data-lang="en">Environment</span></td>
+          <td>Jupyter Notebooks</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="project-divider">
+
+    <!-- CONTEXTO -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// contexto</span>
+      <span data-lang="en">// context</span>
+    </h2>
+
+    <p class="project-text" data-lang="pt">
+      Desenvolvido como projeto prático após a conclusão dos cursos
+      <em>Fundamentos de Engenharia de Dados</em> e
+      <em>Fundamentos de Data Science e Inteligencia Artificial</em>
+      da <a href="https://www.datascienceacademy.com.br/" target="_blank">Data Science Academy</a>
+    </p>
+    <p class="project-text" data-lang="en">
+      Developed as a practical project after completing the courses
+      <em>Data Engineering Fundamentals</em> and
+      <em>Data Science and Artificial Intelligence Fundamentals</em>
+      at <a href="https://www.datascienceacademy.com.br/" target="_blank">Data Science Academy</a>
+    </p>
+
+    <!-- CTA -->
+    <div class="project-cta">
+      <a href="https://github.com/franciellerl/Plantas-do-Brasil" target="_blank" class="btn-primary">
+        <span data-lang="pt">ver no GitHub &rarr;</span>
+        <span data-lang="en">view on GitHub &rarr;</span>
+      </a>
+      <a href="../index.html" class="btn-ghost">
+        <span data-lang="pt">&larr; voltar ao portfólio</span>
+        <span data-lang="en">&larr; back to portfolio</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span data-lang="pt">feito com html + css + js &mdash; hospedado no github pages</span>
+    <span data-lang="en">made with html + css + js &mdash; hosted on github pages</span>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>

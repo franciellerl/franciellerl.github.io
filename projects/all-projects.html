@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>:Portfolio - Projetos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='65%25' font-size='70' font-family='sans-serif' font-weight='bold' text-anchor='middle'%3E:)%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo">/:/</span>
+    <div class="nav-center">
+      <a href="../index.html">
+        <span data-lang="pt">&larr; Início</span>
+        <span data-lang="en">&larr; Home</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">&#9680;</button>
+    </div>
+  </nav>
+
+  <div class="allprojects-wrap">
+
+    <a href="../index.html" class="btn-back">
+      <span data-lang="pt">&larr; voltar</span>
+      <span data-lang="en">&larr; back</span>
+    </a>
+
+    <h1 class="allprojects-title">
+      <span data-lang="pt">// PROJETOS</span>
+      <span data-lang="en">// PROJECTS</span>
+    </h1>
+    <p class="allprojects-sub">
+      <span data-lang="pt">engenharia de dados &middot; analise &middot; visualizacao &middot; inteligencia artificial</span>
+      <span data-lang="en">data engineering &middot; analysis &middot; visualization &middot; artificial intelligence</span>
+    </p>
+
+    <hr class="allprojects-rule">
+
+    <!-- FILTER BAR -->
+    <div class="allprojects-filter-bar">
+      <span class="allprojects-filter-label">
+        <span data-lang="pt">filtrar:</span>
+        <span data-lang="en">filter:</span>
+      </span>
+      <button class="allprojects-filter-btn active" data-filter="all">
+        <span data-lang="pt">todos</span>
+        <span data-lang="en">all</span>
+      </button>
+      <button class="allprojects-filter-btn" data-filter="etl">ETL</button>
+      <button class="allprojects-filter-btn" data-filter="ml">ML</button>
+      <button class="allprojects-filter-btn" data-filter="viz">
+        <span data-lang="pt">visualizacao</span>
+        <span data-lang="en">visualization</span>
+      </button>
+      <button class="allprojects-filter-btn" data-filter="geo">
+        <span data-lang="pt">geoespacial</span>
+        <span data-lang="en">geospatial</span>
+      </button>
+      <button class="allprojects-filter-btn" data-filter="bi">BI</button>
+      <button class="allprojects-filter-btn" data-filter="python">Python</button>
+      <button class="allprojects-filter-btn" data-filter="sql">SQL</button>
+    </div>
+
+    <!-- COUNT -->
+    <p class="allprojects-count">
+      <span data-lang="pt">mostrando <span id="count-visible">0</span> projetos</span>
+      <span data-lang="en">showing <span id="count-visible-en">0</span> projects</span>
+    </p>
+
+    <!-- GRID -->
+    <div class="allprojects-grid" id="projects-grid">
+
+      <!-- 01 -->
+      <article class="card" data-tags="etl python sql">
+        <span class="card-num">01</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">ETL</span>
+          <span class="card-tag">Python</span>
+          <span class="card-tag">SQL</span>
+        </div>
+        <h3 class="card-title">Banking ETL Pipeline</h3>
+        <p class="card-desc" data-lang="pt">
+          Pipeline automatizado para extracao, transformacao e carga de dados bancarios.
+          Processamento de 2M+ registros diarios com validacao e logs detalhados.
+        </p>
+        <p class="card-desc" data-lang="en">
+          Automated pipeline for extraction, transformation and loading of banking data.
+          Processes 2M+ records daily with validation and detailed logs.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="banking-etl.html" class="card-link">
+            <span data-lang="pt">ver projeto &rarr;</span>
+            <span data-lang="en">view project &rarr;</span>
+          </a>
+          <span class="allprojects-card-status">2024</span>
+        </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="card" data-tags="bi viz sql">
+        <span class="card-num">02</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">Qlik</span>
+          <span class="card-tag">BI</span>
+          <span class="card-tag">Analytics</span>
+        </div>
+        <h3 class="card-title">Qlik Dashboard</h3>
+        <p class="card-desc" data-lang="pt">
+          Dashboard executivo com KPIs em tempo real, analise de cohort e
+          visualizacoes interativas para suporte a decisao.
+        </p>
+        <p class="card-desc" data-lang="en">
+          Executive dashboard with real-time KPIs, cohort analysis and interactive
+          visualizations for decision support.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="qlik-dashboard.html" class="card-link">
+            <span data-lang="pt">ver projeto &rarr;</span>
+            <span data-lang="en">view project &rarr;</span>
+          </a>
+          <span class="allprojects-card-status">2024</span>
+        </div>
+      </article>
+
+      <!-- 03 -->
+      <article class="card" data-tags="etl ml viz geo python">
+        <span class="card-num">03</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">ETL</span>
+          <span class="card-tag">ML</span>
+          <span class="card-tag">Geo</span>
+          <span class="card-tag">Python</span>
+        </div>
+        <h3 class="card-title">Plantas do Brasil</h3>
+        <p class="card-desc" data-lang="pt">
+          Pipeline completo de ETL, analise exploratoria e clustering geoespacial
+          sobre dados de biodiversidade floral brasileira via GBIF.
+          Entrega: mapa interativo com heatmap e toggle por cluster.
+        </p>
+        <p class="card-desc" data-lang="en">
+          End-to-end ETL pipeline, exploratory analysis and geospatial clustering
+          on Brazilian floral biodiversity data via GBIF.
+          Deliverable: interactive map with heatmap and per-cluster toggle.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="plantas-brasil.html" class="card-link">
+            <span data-lang="pt">ver projeto &rarr;</span>
+            <span data-lang="en">view project &rarr;</span>
+          </a>
+          <span class="allprojects-card-status">2025</span>
+        </div>
+      </article>
+
+      <!-- 04 -->
+      <article class="card" data-tags="geo python viz">
+        <span class="card-num">04</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">GeoPandas</span>
+          <span class="card-tag">Mapas</span>
+          <span class="card-tag">Python</span>
+        </div>
+        <h3 class="card-title">Geodata Analysis</h3>
+        <p class="card-desc" data-lang="pt">
+          Analise geoespacial de dados urbanos com visualizacoes em mapa,
+          clustering e analise de cobertura por regiao.
+        </p>
+        <p class="card-desc" data-lang="en">
+          Geospatial analysis of urban data with map visualizations,
+          clustering and regional coverage analysis.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="geodata.html" class="card-link">
+            <span data-lang="pt">ver projeto &rarr;</span>
+            <span data-lang="en">view project &rarr;</span>
+          </a>
+          <span class="allprojects-card-status">2024</span>
+        </div>
+      </article>
+
+      <!-- 05 -->
+      <article class="card" data-tags="etl sql python">
+        <span class="card-num">05</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">PostgreSQL</span>
+          <span class="card-tag">ETL</span>
+          <span class="card-tag">Python</span>
+        </div>
+        <h3 class="card-title">
+          <span data-lang="pt">Pipeline de Dados Publicos</span>
+          <span data-lang="en">Public Data Pipeline</span>
+        </h3>
+        <p class="card-desc" data-lang="pt">
+          Ingestao e normalizacao de datasets abertos em PostgreSQL.
+          Automacao com agendamento e alertas por falha.
+        </p>
+        <p class="card-desc" data-lang="en">
+          Ingestion and normalization of open datasets into PostgreSQL.
+          Automation with scheduling and failure alerts.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="#" class="card-link">
+            <span data-lang="pt">em breve &rarr;</span>
+            <span data-lang="en">coming soon &rarr;</span>
+          </a>
+          <span class="allprojects-card-status wip">WIP</span>
+        </div>
+      </article>
+
+      <!-- 06 -->
+      <article class="card" data-tags="ml python viz">
+        <span class="card-num">06</span>
+        <div class="allprojects-card-tags">
+          <span class="card-tag">ML</span>
+          <span class="card-tag">Scikit-Learn</span>
+          <span class="card-tag">Python</span>
+        </div>
+        <h3 class="card-title">
+          <span data-lang="pt">Previsao de Series Temporais</span>
+          <span data-lang="en">Time Series Forecasting</span>
+        </h3>
+        <p class="card-desc" data-lang="pt">
+          Modelagem preditiva de series temporais aplicada a dados operacionais.
+          Comparacao de modelos ARIMA, Prophet e regressao com features de calendario.
+        </p>
+        <p class="card-desc" data-lang="en">
+          Predictive modeling of time series applied to operational data.
+          Model comparison: ARIMA, Prophet and regression with calendar features.
+        </p>
+        <div class="allprojects-card-footer">
+          <a href="#" class="card-link">
+            <span data-lang="pt">em breve &rarr;</span>
+            <span data-lang="en">coming soon &rarr;</span>
+          </a>
+          <span class="allprojects-card-status wip">WIP</span>
+        </div>
+      </article>
+
+      <!-- empty state -->
+      <div class="allprojects-empty" id="empty-state">
+        <span data-lang="pt">nenhum projeto encontrado para este filtro.</span>
+        <span data-lang="en">no projects found for this filter.</span>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span data-lang="pt">feito com html + css + js &mdash; hospedado no github pages</span>
+    <span data-lang="en">made with html + css + js &mdash; hosted on github pages</span>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
