@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>:Portfolio — Francielle</title>
+  <title>:Portfolio - Francielle</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='65%25' font-size='70' font-family='sans-serif' font-weight='bold' text-anchor='middle'%3E:)%3C/text%3E%3C/svg%3E">
   <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&family=Silkscreen:wght@400;70&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
@@ -31,8 +32,8 @@
     <span class="nav-logo">://</span>
     <div class="nav-center">
       <a href="#about"><span data-lang="pt">Sobre</span><span data-lang="en">About</span></a>
-      <a href="#garden"><span data-lang="pt">Jardim</span><span data-lang="en">Garden</span></a>
       <a href="#projects"><span data-lang="pt">Projetos</span><span data-lang="en">Projects</span></a>
+      <a href="#garden"><span data-lang="pt">Jardim</span><span data-lang="en">Garden</span></a>
       <a href="#contact"><span data-lang="pt">Contato</span><span data-lang="en">Contact</span></a>
     </div>
     <div class="nav-right">
@@ -55,14 +56,11 @@
           <span data-lang="pt">Data Science &amp; Analytics</span>
           <span data-lang="en">Data Science &amp; Analytics</span>
         </p>
-        <p class="hero-tagline">
-          <span data-lang="pt">
-            Apaixonada por dados, tecnologia e resolução de problemas :)
-          </span>
-          <span data-lang="en">
-            Passionate about data, technology, and problem-solving :)
-          </span>
+        <p class="hero-eyebrow">
+          <span data-lang="pt">.❀。• *₊°。 ❀°。 </span>
+          <span data-lang="en">.❀。• *₊°。 ❀°。 </span>
         </p>
+        <br>
         <div class="hero-links">
           <a href="#projects">
             <span data-lang="pt">Ver projetos</span>
@@ -139,30 +137,21 @@
       <div class="about-box" data-corner="README">
         <p class="about-text" data-lang="pt">
           Oi! Meu nome é Francielle e sou formada em Ciência da Computação pela UFMA.
-          <br>
-          <br>
           Atualmente trabalho como analista de dados, e tenho uma paixão pela área de dados como um todo.
           Eu gosto de encontrar padrões onde antes parecia existir apenas ruído, 
           seja construindo pipelines, desenvolvendo modelos preditivos 
-          ou criando análises que ajudam a entender melhor o que está acontecendo. 
-          <br>
-          <br>
-          Quando não estou depurando queries, estou cuidando das minhas plantas 
-          e fazendo previsões bastante otimistas sobre quanto tempo elas vão sobreviver ;).
+          ou criando análises que ajudam a entender melhor o que está acontecendo. Este portfólio reúne 
+          alguns projetos que desenvolvi explorando temas como engenharia de dados, ciência de dados, 
+          aprendizado de máquina e análise geoespacial.
         </p>
         <p class="about-text" data-lang="en"> 
           Hi! My name is Francielle, and I graduated in Computer Science from UFMA.
-          <br>
-          <br>
           I currently work as a Data Analyst, and I'm passionate about the data field as a whole. 
           I enjoy finding patterns where there once seemed to be only noise, 
           whether by building pipelines, developing predictive models, 
           or creating analyses that help make sense of what's happening.
-          <br>
-          <br>
-          When I'm not debugging queries, I'm taking care of my plants 
-          and making overly optimistic predictions about how long they'll survive ;).
-
+          This portfolio brings together projects I have developed in areas such as 
+          data engineering, data science, machine learning, and geospatial analysis.
         </p>
 
         <div class="flower-divider">~ * ~ * ~ * ~</div>
@@ -181,34 +170,14 @@
       </div>
     </div>
   </section>
-
-  <!-- INTERACTIVE GARDEN -->
-  <section class="garden-section" id="garden">
-    <div class="section-inner">
-      <h2 class="section-title">
-        <span data-lang="pt">// jardim.interativo</span>
-        <span data-lang="en">// interactive.garden</span>
-      </h2>
-      <hr class="section-rule">
-
-      <p class="garden-intro" data-lang="pt">Clique para plantar uma flor. Cada visita deixa uma marca.</p>
-      <p class="garden-intro" data-lang="en">Click to plant a flower. Every visit leaves a mark.</p>
-
-      <div class="garden-canvas" id="gardenCanvas">
-        <svg id="gardenSvg" xmlns="http://www.w3.org/2000/svg"></svg>
-      </div>
-      <p class="garden-hint" data-lang="pt">[ clique no jardim para adicionar flores ]</p>
-      <p class="garden-hint" data-lang="en">[ click the garden to add flowers ]</p>
-    </div>
-  </section>
-
+  
   <!-- PROJECTS -->
   <section class="projects" id="projects">
     <div class="section-inner">
       <h2 class="section-title">
         <span data-lang="pt">// projetos</span>
         <span data-lang="en">// projects</span>
-        <a href="projects/allprojects.html" class="section-more">+</a>
+        <a href="projects/all-projects.html" class="section-more">+</a>
       </h2>
       <hr class="section-rule">
 
@@ -216,17 +185,17 @@
 
         <article class="card">
           <span class="card-num">01</span>
-          <div class="card-tag">Python &middot; SQL</div>
-          <h3 class="card-title">Banking ETL Pipeline</h3>
+          <div class="card-tag">Python &middot; Pandas</div>
+          <h3 class="card-title">Plantas do Brasil</h3>
           <p class="card-desc" data-lang="pt">
-            Pipeline automatizado para extração, transformação e carga de dados bancários.
-            Processamento de 2M+ registros diários com validação e logs detalhados.
+            Pipeline completo de ETL, análise exploratoria e clustering geoespacial
+            aplicado a dados de biodiversidade da flora brasileira.
           </p>
           <p class="card-desc" data-lang="en">
-            Automated pipeline for extraction, transformation and loading of banking data.
-            Processes 2M+ records daily with validation and detailed logs.
+            End-to-end ETL pipeline, exploratory data analysis, and geospatial clustering 
+            applied to Brazilian flora biodiversity data.
           </p>
-          <a href="projects/banking-etl.html" class="card-link">
+          <a href="projects/plantas-brasil.html" class="card-link">
             <span data-lang="pt">ver projeto &rarr;</span>
             <span data-lang="en">view project &rarr;</span>
           </a>
@@ -272,6 +241,23 @@
     </div>
   </section>
 
+  <!-- INTERACTIVE GARDEN -->
+  <section class="garden-section" id="garden">
+    <div class="section-inner">
+      <h2 class="section-title">
+        <span data-lang="pt">// jardim.interativo</span>
+        <span data-lang="en">// interactive.garden</span>
+      </h2>
+      <hr class="section-rule">
+
+      <div class="garden-canvas" id="gardenCanvas">
+        <svg id="gardenSvg" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+      <p class="garden-hint" data-lang="pt">[ clique no jardim para adicionar flores ]</p>
+      <p class="garden-hint" data-lang="en">[ click the garden to add flowers ]</p>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div class="section-inner">
@@ -282,8 +268,8 @@
       <hr class="section-rule">
 
       <div class="contact-inner">
-        <p class="contact-sub" data-lang="pt">Sempre feliz em trocar ideias e aprender algo novo.</p>
-        <p class="contact-sub" data-lang="en">Always happy to exchange ideas and learn something new.</p>
+        <p class="contact-sub" data-lang="pt">Sempre feliz em trocar ideias e aprender algo novo :).</p>
+        <p class="contact-sub" data-lang="en">Always happy to exchange ideas and learn something  :).</p>
 
         <div class="contact-links">
           <a href="https://github.com/franciellerl" target="_blank" class="contact-link">GitHub</a>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Banking ETL Pipeline — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-logo">&#123; DEV &#125;</span>
+    <div class="nav-links">
+      <a href="../index.html">← Voltar</a>
+    </div>
+    <button id="theme-toggle" aria-label="Alternar tema">🌙</button>
+  </nav>
+
+  <main class="project-page">
+    <a href="../index.html" class="btn btn-back">← Todos os projetos</a>
+
+    <p class="project-eyebrow">ETL · Python · PostgreSQL · Automação</p>
+    <h1 class="project-title">Banking ETL<br><em>Pipeline</em></h1>
+
+    <div class="project-meta">
+      <span class="meta-tag">Python</span>
+      <span class="meta-tag">PostgreSQL</span>
+      <span class="meta-tag">Pandas</span>
+      <span class="meta-tag">SQLAlchemy</span>
+      <span class="meta-tag">Airflow</span>
+    </div>
+
+    <hr class="project-divider">
+
+    <h2 class="project-section-title">Visão geral</h2>
+    <p class="project-text">
+      Pipeline automatizado para extração, transformação e carga de dados 
+      bancários. Processa mais de 2 milhões de registros diários, com validação
+      de dados, tratamento de erros e logging completo.
+    </p>
+
+    <div class="project-highlight">
+      <span>→ 2.4M registros/dia</span><br>
+      <span>→ Redução de 70% no tempo de processamento</span><br>
+      <span>→ 99.8% de confiabilidade nos dados</span><br>
+      <span>→ Alertas automáticos via email em caso de falha</span>
+    </div>
+
+    <h2 class="project-section-title">Como funciona</h2>
+    <p class="project-text">
+      O pipeline roda diariamente via Airflow. A etapa de extração puxa dados
+      de múltiplas fontes (APIs e arquivos CSV legados), a etapa de transformação
+      aplica regras de negócio e validações, e a carga insere os dados limpos
+      no data warehouse PostgreSQL.
+    </p>
+
+    <hr class="project-divider">
+
+    <a href="https://github.com/" target="_blank" class="btn btn-primary">Ver no GitHub →</a>
+  </main>
+
+  <script>
+    // Dark/light mode reutilizado
+    const btn = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+    const saved = localStorage.getItem('theme') || 'dark';
+    html.setAttribute('data-theme', saved);
+    btn.textContent = saved === 'dark' ? '🌙' : '☀️';
+    btn.addEventListener('click', () => {
+      const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      btn.textContent = next === 'dark' ? '🌙' : '☀️';
+      localStorage.setItem('theme', next);
+    });
+  </script>
+
+</body>
+</html>
