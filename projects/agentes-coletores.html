@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>:Portfolio - Agentes Coletores de Recursos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext x='50%25' y='65%25' font-size='70' font-family='sans-serif' font-weight='bold' text-anchor='middle'%3E:)%3C/text%3E%3C/svg%3E">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&family=Special+Elite&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="nav-logo">//:</span>
+    <div class="nav-center">
+      <a href="../index.html">
+        <span data-lang="pt">&larr; Início</span>
+        <span data-lang="en">&larr; Home</span>
+      </a>
+    </div>
+    <div class="nav-right">
+      <button class="lang-btn active" id="btn-pt" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn" id="btn-en" onclick="setLang('en')">EN</button>
+      <button class="theme-btn" id="theme-toggle" aria-label="Toggle theme">&#9680;</button>
+    </div>
+  </nav>
+
+  <main class="project-page">
+
+    <a href="all-projects.html" class="btn-back">
+      <span data-lang="pt">&larr; todos os projetos</span>
+      <span data-lang="en">&larr; all projects</span>
+    </a>
+
+    <!-- HEADER -->
+    <p class="project-eyebrow">
+      <span data-lang="pt">Inteligência Artificial &middot; Sistemas Multiagentes &middot; Simulação</span>
+      <span data-lang="en">Artificial Intelligence &middot; Multi-Agent Systems &middot; Simulation</span>
+    </p>
+
+    <h1 class="project-title">AGENTES<br>COLETORES</h1>
+
+    <div class="project-meta">
+      <span class="meta-tag">Python</span>
+      <span class="meta-tag">Streamlit</span>
+      <span class="meta-tag">Pandas</span>
+      <span class="meta-tag">Altair</span>
+      <span class="meta-tag">BFS</span>
+      <span class="meta-tag">BDI</span>
+      <span class="meta-tag">MAS</span>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- VISAO GERAL -->
+    <div class="flower-accent">
+      <svg width="60" height="70" viewBox="0 0 60 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g transform="translate(30,28)">
+          <ellipse cx="0" cy="-16" rx="7" ry="11" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="0" cy="16" rx="7" ry="11" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="-16" cy="0" rx="11" ry="7" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="16" cy="0" rx="11" ry="7" fill="var(--accent2)" opacity="0.8"/>
+          <ellipse cx="-11" cy="-11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(-45 -11 -11)"/>
+          <ellipse cx="11" cy="-11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(45 11 -11)"/>
+          <ellipse cx="-11" cy="11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(45 -11 11)"/>
+          <ellipse cx="11" cy="11" rx="7" ry="11" fill="var(--accent)" opacity="0.55" transform="rotate(-45 11 11)"/>
+          <circle cx="0" cy="0" r="8" fill="var(--accent3)"/>
+        </g>
+        <line x1="30" y1="44" x2="30" y2="68" stroke="var(--border)" stroke-width="1.5"/>
+      </svg>
+    </div>
+
+    <h2 class="project-section-title">
+      <span data-lang="pt">// visão_geral</span>
+      <span data-lang="en">// overview</span>
+    </h2>
+
+    <p class="project-text" data-lang="pt">
+      Simulação de um sistema multiagentes aplicado à exploração de ambientes desconhecidos,
+      desenvolvida para a disciplina de Inteligência Artificial. O projeto recria uma
+      comunidade de agentes autônomos responsáveis por explorar um planeta, coletar recursos
+      naturais e transportá-los até uma base central, aplicando conceitos
+      como arquitetura BDI, busca em grafos e tomada de decisão por utilidade.
+    </p>
+    <p class="project-text" data-lang="en">
+      A multi-agent system simulation applied to unknown environment exploration,
+      developed for an Artificial Intelligence course. The project recreates a community
+      of autonomous agents responsible for exploring a planet, collecting natural resources,
+      and transporting them to a central base, applying concepts such as BDI
+      architecture, graph search, and utility-based decision making.
+    </p>
+
+    <div class="project-highlight">
+      <span data-lang="pt">
+        <span>&#x2192; Ambiente gerado dinamicamente com obstáculos e recursos distribuídos</span><br>
+        <span>&#x2192; Três arquiteturas de agentes: Reativo, Baseado em Estado e BDI</span><br>
+        <span>&#x2192; Navegação com BFS e crenças compartilhadas entre agentes</span><br>
+        <span>&#x2192; Interface interativa em tempo real com Streamlit</span>
+      </span>
+      <span data-lang="en">
+        <span>&#x2192; Dynamically generated environment with obstacles and distributed resources</span><br>
+        <span>&#x2192; Three agent architectures: Reactive, State-Based, and BDI</span><br>
+        <span>&#x2192; BFS navigation and shared beliefs between agents</span><br>
+        <span>&#x2192; Real-time interactive interface built with Streamlit</span>
+      </span>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- PIPELINE -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// estrutura_do_projeto</span>
+      <span data-lang="en">// project_structure</span>
+    </h2>
+
+    <div class="pipeline-steps">
+
+      <div class="pipeline-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <div class="step-title">models.py &mdash;
+            <span data-lang="pt">Modelagem do Ambiente</span>
+            <span data-lang="en">Environment Modeling</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Representação do planeta e distribuição dos recursos disponíveis. Cria o mapa
+            de exploração, posiciona a base central, gera obstáculos naturais como montanhas
+            e rios, e implementa controle de movimentação dos agentes. A navegação utiliza
+            Breadth-First Search (BFS) para identificar caminhos válidos e monitorar recursos
+            ao longo da execução.
+          </p>
+          <p class="step-desc" data-lang="en">
+            Planet representation and distribution of available resources. Creates the exploration
+            map, positions the central base, generates natural obstacles such as mountains and rivers,
+            and handles agent movement control. Navigation uses Breadth-First Search (BFS) to identify
+            valid paths and monitor resources throughout the simulation run.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <div class="step-title">agents.py &mdash;
+            <span data-lang="pt">Desenvolvimento dos Agentes</span>
+            <span data-lang="en">Agent Development</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Define os agentes exploradores e seus mecanismos de tomada de decisão. Uma classe
+            base <code>Agent</code> fornece funcionalidades comuns como controle de inventário,
+            entrega de recursos e cálculo de utilidade. A partir dela, são implementadas três
+            arquiteturas distintas: agente reativo, baseado em estado e BDI — com compartilhamento
+            de crenças coletivas entre agentes.
+          </p>
+          <p class="step-desc" data-lang="en">
+            Defines the explorer agents and their decision-making mechanisms. A base <code>Agent</code>
+            class provides shared functionality such as inventory management, resource delivery, and
+            utility calculation. From it, three distinct architectures are implemented: reactive,
+            state-based, and BDI — with collective belief sharing across agents.
+          </p>
+        </div>
+      </div>
+
+      <div class="pipeline-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <div class="step-title">app.py &mdash;
+            <span data-lang="pt">Interface e Execução da Simulação</span>
+            <span data-lang="en">Interface and Simulation Execution</span>
+          </div>
+          <p class="step-desc" data-lang="pt">
+            Responsável pela inicialização, execução e visualização da simulação. A interface
+            gráfica em Streamlit permite configurar os parâmetros antes de rodar, acompanhar
+            os agentes em tempo real no mapa e visualizar estatísticas de desempenho ao final
+            de cada ciclo de simulação.
+          </p>
+          <p class="step-desc" data-lang="en">
+            Handles initialization, execution, and visualization of the simulation. The Streamlit
+            interface allows configuring parameters before running, tracking agents in real time
+            on the map, and viewing performance statistics at the end of each simulation cycle.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- STACK -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// stack</span>
+      <span data-lang="en">// stack</span>
+    </h2>
+
+    <table class="stack-table">
+      <thead>
+        <tr>
+          <th><span data-lang="pt">Camada</span><span data-lang="en">Layer</span></th>
+          <th><span data-lang="pt">Tecnologia</span><span data-lang="en">Technology</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span data-lang="pt">Interface</span><span data-lang="en">Interface</span></td>
+          <td><code>streamlit</code></td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Agentes &amp; Lógica</span><span data-lang="en">Agents &amp; Logic</span></td>
+          <td><code>Python</code> — classes, herança, arquitetura BDI</td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Navegação</span><span data-lang="en">Navigation</span></td>
+          <td><code>collections.deque</code> — BFS</td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Dados</span><span data-lang="en">Data</span></td>
+          <td><code>pandas</code></td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Visualização</span><span data-lang="en">Visualization</span></td>
+          <td><code>altair</code></td>
+        </tr>
+        <tr>
+          <td><span data-lang="pt">Ambiente</span><span data-lang="en">Environment</span></td>
+          <td><code>random</code> — geração procedural do mapa</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="project-divider">
+
+    <!-- CONCEITOS DE IA -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// conceitos_de_ia_aplicados</span>
+      <span data-lang="en">// applied_ai_concepts</span>
+    </h2>
+
+    <p class="project-text" data-lang="pt">
+      O projeto aplica na prática os principais conceitos de Inteligência Artificial
+      voltados a agentes autônomos e ambientes dinâmicos:
+    </p>
+    <p class="project-text" data-lang="en">
+      The project puts into practice the core Artificial Intelligence concepts
+      related to autonomous agents and dynamic environments:
+    </p>
+
+    <div class="project-highlight">
+      <span data-lang="pt">
+        <span>&#x2192; <strong>MAS</strong> — Sistemas Multiagentes com cooperação e crenças coletivas</span><br>
+        <span>&#x2192; <strong>BDI</strong> — Arquitetura Belief-Desire-Intention</span><br>
+        <span>&#x2192; <strong>BFS</strong> — Busca em Grafos para navegação e pathfinding</span><br>
+        <span>&#x2192; <strong>Utilidade</strong> — Tomada de decisão baseada em função de utilidade</span><br>
+        <span>&#x2192; <strong>Agentes Reativos e Baseados em Estado</strong> — arquiteturas contrastantes</span>
+      </span>
+      <span data-lang="en">
+        <span>&#x2192; <strong>MAS</strong> — Multi-Agent Systems with cooperation and collective beliefs</span><br>
+        <span>&#x2192; <strong>BDI</strong> — Belief-Desire-Intention architecture</span><br>
+        <span>&#x2192; <strong>BFS</strong> — Graph Search for navigation and pathfinding</span><br>
+        <span>&#x2192; <strong>Utility</strong> — Decision making via utility function</span><br>
+        <span>&#x2192; <strong>Reactive &amp; State-Based Agents</strong> — contrasting architectures</span>
+      </span>
+    </div>
+
+    <hr class="project-divider">
+
+    <!-- CONTEXTO -->
+    <h2 class="project-section-title">
+      <span data-lang="pt">// contexto</span>
+      <span data-lang="en">// context</span>
+    </h2>
+
+    <p class="project-text" data-lang="pt">
+      Desenvolvido como projeto final da disciplina de
+      <em>Inteligência Artificial</em>, com foco em sistemas multiagentes
+      aplicados à exploração de ambientes dinâmicos e desconhecidos.
+    </p>
+    <p class="project-text" data-lang="en">
+      Developed as the final project for the
+      <em>Artificial Intelligence</em> course, focused on multi-agent systems
+      applied to the exploration of dynamic and unknown environments.
+    </p>
+
+    <!-- CTA -->
+    <div class="project-cta">
+      <a href="https://github.com/franciellerl/Agentes-Coletores-de-Recursos" target="_blank" class="btn-primary">
+        <span data-lang="pt">ver no GitHub &rarr;</span>
+        <span data-lang="en">view on GitHub &rarr;</span>
+      </a>
+      <a href="../index.html" class="btn-ghost">
+        <span data-lang="pt">&larr; voltar ao portfólio</span>
+        <span data-lang="en">&larr; back to portfolio</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <span data-lang="pt">feito com html + css + js &mdash; hospedado no github pages</span>
+    <span data-lang="en">made with html + css + js &mdash; hosted on github pages</span>
+  </footer>
+
+  <script src="../script.js"></script>
+
+</body>
+</html>
